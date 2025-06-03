@@ -532,7 +532,7 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
-      - notify:
+      - jira/notify:
           environment: dev_sol_mate_client_1
           environment_type: testing
           job_type: deployment
